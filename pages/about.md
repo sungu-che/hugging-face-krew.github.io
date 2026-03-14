@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: "/about/"
-image: assets/images/logo.webp
+image: assets/images/KREWxHuggingFace_banner.png
 ---
 
 ## Hugging Face Krew 소개 💖
