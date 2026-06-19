@@ -44,8 +44,6 @@ $(function () {
   $window.scroll(function () {
     var scrollTop = $('html,body').scrollTop();
 
-    console.log('scrollTop',scrollTop);
-
     if (scrollTop > 0) {
       header.removeClass('start-style').addClass("scroll-on");
     } else {
