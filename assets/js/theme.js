@@ -10,6 +10,10 @@ $(function () {
 
   var $endScroll = $('.post-top-meta');
 
+  if($endScroll.length == 0){
+    $endScroll = $('.footer-card-container');
+  }
+
   var $toc = $('.toc-content #markdown-toc');
 
   var scrollTop = $('html,body').scrollTop();
