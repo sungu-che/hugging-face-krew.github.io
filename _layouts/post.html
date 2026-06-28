@@ -112,27 +112,31 @@ post_class: post-template
 
 <!-- Posts List with Sidebar (except featured)
 ================================================== -->
-{% assign current_category = page.categories | first %}
-{% if current_category %}
-  {% assign target_posts = site.categories[current_category] %}
-{% else %}
-  {% assign target_posts = site.posts %}
-{% endif %}
+{% assign target_posts = "" | split: "" %}
+
+{% for category in page.categories %}
+  {% assign target_posts = target_posts | concat: site.categories[category] %}
+{% endfor %}
+
+{% assign target_posts = target_posts | uniq | where_exp: "post", "post.url != page.url" %}
 
 <section class="category-filter-section mb-5">
   <div class="category-filters">
     <div class="filter-tabs">
-      {% if current_category %}
-      <button class="filter-btn active" data-category="{{ current_category | slugify }}">
-        {{ current_category }}
-        <span class="count">{{ target_posts.size }}</span>
-      </button>
-      {% else %}
       <button class="filter-btn active" data-category="all">
         All
         <span class="count">{{ target_posts.size }}</span>
       </button>
-      {% endif %}
+
+      {% for category in page.categories %}
+        {% assign category_posts = site.categories[category] | where_exp: "post", "post.url != page.url" %}
+        {% if category_posts.size > 0 %}
+          <button class="filter-btn" data-category="{{ category | slugify }}">
+            {{ category }}
+            <span class="count">{{ category_posts.size }}</span>
+          </button>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>
