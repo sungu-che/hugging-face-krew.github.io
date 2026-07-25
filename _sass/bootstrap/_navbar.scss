@@ -105,8 +105,9 @@
   background-color:#fff;
 }
 
-.navbar-collapse.show{padding-bottom: 20px; background-color:#fff;}
-.navbar-collapse.show:after {content: ""; position: absolute; left: -100vw; right: -100vw; bottom: 0; height: 20px; box-shadow: 0 10px 10px 0px #00000011;}
+.navbar-collapse.show { padding-bottom: 20px; background-color:#fff; }
+.navbar-collapse.show:after { content: ""; position: absolute; left: -100vw; right: -100vw; bottom: -5px; height: 20px; box-shadow: 0 10px 10px 0px #00000011; }
+.layout-post .navbar-collapse { background-color:transparent; }
 
 // Button for toggling the navbar when in its collapsed state
 .navbar-toggler {
