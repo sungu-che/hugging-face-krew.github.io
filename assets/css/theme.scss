@@ -459,7 +459,7 @@ blockquote {
 #featured-image .back-image {position: absolute; left: 0; top: 0; max-width: inherit; width: 100vw; height: 330px; object-fit: cover; z-index:-1;}
 
 /* 이미지를 꽉차게 하고 싶으시다면 object-fit: cover; 로 반영하면 됩니다! */
-#featured-image .featured-image{position: relative; display: block; margin: 18px auto 0; height: 220px; width: auto; object-fit: contain; z-index: 1;}
+#featured-image .featured-image{position: relative; display: block; margin: 18px auto 0; border-radius:10px !important; height: 220px; width: auto; object-fit: contain; z-index: 1;}
 
 .full-width {
     width: 100vw;
