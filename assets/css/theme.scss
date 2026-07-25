@@ -48,7 +48,7 @@ body {
     
 }
 .serif-font {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", sans-serif, "Noto Color Emoji";
     font-size: clamp(1rem, 2.5vw, 1.5rem);
 
     @media (max-width: 480px) {
@@ -424,7 +424,7 @@ span.post-name a,span.post-read-more a:hover {
 .article-post {
     font-size: 1.18em;
     line-height: 1.64;
-    font-family: "Gowun Batang", serif;
+    font-family: "Gowun Batang", serif, "Noto Color Emoji";
 	color:rgba(0,0,0,.8);
     code {
         font-size:15px;
@@ -668,7 +668,7 @@ background-color: #fff;
 .sidebar ul {list-style:none;padding-left:0;}
 .sidebar ul ul{margin-left: 26px; margin-bottom: 10px;}
 .sidebar ul li a {
-    font-family: "Gowun Batang", serif;
+    font-family: "Gowun Batang",serif, "Noto Color Emoji";
     color: #999;
     display: block;
 }
@@ -703,7 +703,7 @@ background-color: #fff;
 
 .article-post .h1, .article-post .h2, .article-post .h3, .article-post .h4, .article-post .h5, .article-post .h6, .article-post h1, .article-post h2, .article-post h3, .article-post h4, .article-post h5, .article-post h6 {
     font-weight: 600;
-    font-family: "Gowun Batang", serif;
+    font-family: "Gowun Batang",serif, "Noto Color Emoji";
     margin-top: 3rem;
 }
 
