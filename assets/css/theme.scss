@@ -499,7 +499,8 @@ blockquote {
     aspect-ratio: 1160 / 580;
     margin-bottom: 1.5rem;
     overflow: hidden;
-    border-radius: 4px;
+    border-radius: 10px;
+    box-shadow: 0 0 0px 1px #0000000a;
 }
 .card .post-thumbnail {
     display: block;
