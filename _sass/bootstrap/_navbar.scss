@@ -106,7 +106,8 @@
 }
 
 .navbar-collapse.show { padding-bottom: 20px; background-color:#fff; }
-.navbar-collapse.show:after { content: ""; position: absolute; left: -100vw; right: -100vw; bottom: -5px; height: 20px; box-shadow: 0 10px 10px 0px #00000011; }
+.navigation-wrap.scroll-on .navbar-collapse.show:after{bottom: -5px;}
+.navbar-collapse.show:after { content: ""; position: absolute; left: -100vw; right: -100vw; bottom: 9px; height: 20px; box-shadow: 0 10px 10px 0px #00000011; }
 .layout-post .navbar-collapse { background-color:transparent; }
 
 // Button for toggling the navbar when in its collapsed state
